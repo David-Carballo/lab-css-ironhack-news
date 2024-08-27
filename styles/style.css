@@ -102,6 +102,10 @@ header {
   font-weight: bold;
 }
 
+nav img {
+  display: none;
+}
+
 /* Articles */
 .main-article {
   margin: 20px;
@@ -175,6 +179,8 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
+
+
   
 /* Write your CSS below */
 
@@ -260,5 +266,19 @@ header {
 
   .article {
     flex-basis: 45%;
+  }
+}
+
+@media (width < 480px) {
+  .newspaper-name {
+    border-bottom: 0px solid white;
+  }
+
+  nav img {
+    display: inline;
+    border-right: 0px solid #ffffff;
+  }
+  .navbar {
+    display: none;
   }
 }
