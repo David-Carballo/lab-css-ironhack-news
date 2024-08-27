@@ -178,7 +178,7 @@ header {
   
 /* Write your CSS below */
 
-@media (max-width:760px) {
+@media (width < 760px) {
   .navbar {
     flex-direction: column;
     align-items: center;
@@ -239,4 +239,26 @@ header {
     margin-top: 10px;
   }
 
+}
+
+@media (760px < width < 1024px) {
+  .navbar li {
+    width: 100%;
+    height: 40px;
+  }
+
+  .main-article {
+    width: 100%;
+  }
+
+  .articles-container {
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-between;
+    gap: 25px;
+  }
+
+  .article {
+    flex-basis: 45%;
+  }
 }
